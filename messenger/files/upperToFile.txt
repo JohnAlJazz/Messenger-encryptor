@@ -1,0 +1,1 @@
+stdin writeTo.txt upper
