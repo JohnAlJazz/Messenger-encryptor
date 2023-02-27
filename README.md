@@ -1,5 +1,5 @@
 # messenger-encryptor
-This is my messenger encryptor.
+This is a messenger encryptor.
 
 The messenger handles various source => destination messages as follows:
 
