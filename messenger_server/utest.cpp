@@ -1,9 +1,7 @@
-#include "mu_test.h"
-
-#include "Socket.hpp"
-#include "TCPClientSocket.hpp"
-#include "TCPServerSocket.hpp"
-#include "messengerProtocol.hpp"
+#include "../inc/socket.hpp"
+#include "../inc/TCPClientSocket.hpp"
+#include "../inc/TCPServerSocket.hpp"
+#include "../inc/messengerProtocol.hpp"
 
 #include <iostream>
 #include <string>
@@ -11,7 +9,7 @@
 using namespace net;
 using namespace messenger;
 
-BEGIN_TEST(test_messenger_to_TCP)
+int main() {
     
     std::cout << "encrypted message\n\n";
 
@@ -34,16 +32,5 @@ BEGIN_TEST(test_messenger_to_TCP)
             break;
         }
 
-    }
-    // std::string serverMsg("hello from server\n");
-    // auto send = protocol.Pack(serverMsg);
-    // client->Send(send);    
-    
-    ASSERT_PASS();
-END_TEST
-
-
-BEGIN_SUITE(Its what you learn after you know it all that counts)
-    TEST(test_messenger_to_TCP)    
-
-END_SUITE
+    }      
+}

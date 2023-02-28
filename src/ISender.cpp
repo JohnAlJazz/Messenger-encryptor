@@ -1,8 +1,8 @@
-#include "ISender.hpp"
-#include "TCPSocketExceptions.hpp"
-#include "messengerProtocol.hpp"
+#include "../inc/ISender.hpp"
+#include "../inc/messengerProtocol.hpp"
 
 #include <iostream>
+#include <exception>
 
 namespace messenger {
 
@@ -25,7 +25,7 @@ void SendToTCP::Send(std::string& a_message) {
         m_client.Send(msg);
     } 
 
-    catch(const net::TCPSocketExceptions& e) {
+    catch(const std::runtime_error& e) {
 
         std::cout << "here: " << e.what() << '\n';
     }

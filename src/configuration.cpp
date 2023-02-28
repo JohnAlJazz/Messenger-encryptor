@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "configuration.hpp"
+#include "../inc/configuratoin.hpp"
 
 namespace messenger {
 

@@ -2,7 +2,6 @@
 #define IENCRYPTOR_HPP
 
 #include <string>
-#include <boost/algorithm/string.hpp>
 #include <vector>
 #include <memory>
 

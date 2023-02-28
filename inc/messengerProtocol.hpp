@@ -11,7 +11,7 @@ namespace messenger {
 
 struct Protocol {
 
-    std::vector<unsigned char> Pack(const std::string& a_msg);
+    std::vector<char> Pack(const std::string& a_msg);
     std::string UnPack(std::unique_ptr<net::Client>& a_client);
 };
 

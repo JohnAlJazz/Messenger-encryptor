@@ -1,4 +1,4 @@
-#include "IEncryptor.hpp"
+#include "../inc/IEncryptor.hpp"
 
 #include <unordered_map>
 #include <ctype.h>

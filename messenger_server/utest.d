@@ -1,30 +1,15 @@
-utest.o: utest.cpp ../../inc/mu_test.h ../../inc/Socket.hpp \
- ../../inc/TCPSocketExceptions.hpp ../../inc/inl/TCPSocketExceptions.hxx \
- ../../inc/inl/Socket.hxx ../../inc/TCPClientSocket.hpp \
- ../../inc/Socket.hpp ../../inc/inl/client.hxx \
- ../../inc/TCPServerSocket.hpp ../../inc/TCPClientSocket.hpp \
- ../../inc/inl/server.hxx ../../inc/messengerProtocol.hpp
-
-../../inc/mu_test.h:
-
-../../inc/Socket.hpp:
-
-../../inc/TCPSocketExceptions.hpp:
-
-../../inc/inl/TCPSocketExceptions.hxx:
-
-../../inc/inl/Socket.hxx:
-
-../../inc/TCPClientSocket.hpp:
-
-../../inc/Socket.hpp:
-
-../../inc/inl/client.hxx:
-
-../../inc/TCPServerSocket.hpp:
-
-../../inc/TCPClientSocket.hpp:
-
-../../inc/inl/server.hxx:
-
-../../inc/messengerProtocol.hpp:
+utest.o: utest.cpp ../inc/socket.hpp ../inc/./inl/socket_inl.hxx \
+ ../inc/TCPClientSocket.hpp ../inc/socket.hpp \
+ ../inc/TCPSocketExceptions.hpp ../inc/./inl/TCPSocketExceptions.hxx \
+ ../inc/TCPServerSocket.hpp ../inc/Socket.hpp ../inc/TCPClientSocket.hpp \
+ ../inc/messengerProtocol.hpp
+../inc/socket.hpp:
+../inc/./inl/socket_inl.hxx:
+../inc/TCPClientSocket.hpp:
+../inc/socket.hpp:
+../inc/TCPSocketExceptions.hpp:
+../inc/./inl/TCPSocketExceptions.hxx:
+../inc/TCPServerSocket.hpp:
+../inc/Socket.hpp:
+../inc/TCPClientSocket.hpp:
+../inc/messengerProtocol.hpp:

@@ -1,8 +1,8 @@
-#include "messengerProtocol.hpp"
+#include "../inc/messengerProtocol.hpp"
 
 namespace messenger {
 
-static void InitVecWithMsgLen(std::vector<unsigned char>& a_packedVec, unsigned char* a_ptrSize) {
+static void InitVecWithMsgLen(std::vector<char>& a_packedVec, unsigned char* a_ptrSize) {
 
     for(size_t i = 0; i < sizeof(size_t); ++i) {
 
@@ -10,7 +10,7 @@ static void InitVecWithMsgLen(std::vector<unsigned char>& a_packedVec, unsigned 
     }
 }
 
-static void FillVecWithLetters(std::vector<unsigned char>& a_packedVec, const std::string& a_msg) {
+static void FillVecWithLetters(std::vector<char>& a_packedVec, const std::string& a_msg) {
 
     for(auto letter : a_msg) {
 
@@ -18,9 +18,9 @@ static void FillVecWithLetters(std::vector<unsigned char>& a_packedVec, const st
     }
 }
 
-std::vector<unsigned char> Protocol::Pack(const std::string& a_msg) {
+std::vector<char> Protocol::Pack(const std::string& a_msg) {
     
-    std::vector<unsigned char> packedVec;     
+    std::vector<char> packedVec;     
     size_t size = a_msg.length();
     unsigned char* ptrSize = reinterpret_cast<unsigned char*>(&size);    
 
@@ -32,8 +32,8 @@ std::vector<unsigned char> Protocol::Pack(const std::string& a_msg) {
 }
 
 std::string Protocol::UnPack(std::unique_ptr<net::Client>& a_client) {
-
-    std::vector<unsigned char> uscVec = a_client->Receive();
+    
+    std::vector<char> uscVec = a_client->Receive();
     size_t* nthDsize = reinterpret_cast<size_t*>(&uscVec[0]);       
     std::string newMsg;    
     size_t i = sizeof(size_t);

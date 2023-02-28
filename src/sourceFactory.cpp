@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "sourceFactory.hpp"
+#include "../inc/sourceFactory.hpp"
 
 namespace messenger {
 

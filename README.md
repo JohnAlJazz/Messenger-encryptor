@@ -11,6 +11,5 @@ Messages destinations:
   - Screen
   - A file
   - Remote user, over TCP
-  
 
-New encryptions can be injected to the messenger factory/
+New encryptions can be injected to the messenger factory.

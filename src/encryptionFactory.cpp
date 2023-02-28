@@ -1,7 +1,7 @@
 #include <sstream>
 #include <vector>
 
-#include "encryptionFactory.hpp"
+#include "../inc/encryptionFactory.hpp"
 #include <iostream>
 
 namespace messenger {

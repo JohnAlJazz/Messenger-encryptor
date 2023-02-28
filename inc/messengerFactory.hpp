@@ -9,7 +9,7 @@
 #include "senderFactory.hpp"
 #include "sourceFactory.hpp"
 #include "messenger.hpp"
-#include "configuration.hpp"
+#include "configuratoin.hpp"
 
 namespace messenger {
 
@@ -28,8 +28,6 @@ private:
     SenderFactory m_destination;
     EncryptionFactory m_encryption;    
 };
-
-#include "inl/messengerFactory.hxx"
 
 } //messenger
 

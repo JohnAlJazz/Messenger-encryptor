@@ -2,7 +2,7 @@
 #include <tuple>
 #include <string>
 
-#include "senderFactory.hpp"
+#include "../inc/senderFactory.hpp"
 
 #define FILE_SUFFIX_LEN 4
 

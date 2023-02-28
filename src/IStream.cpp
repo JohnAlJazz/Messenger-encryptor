@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "IStream.hpp"
+#include "../inc/IStream.hpp"
 
 namespace messenger {
 

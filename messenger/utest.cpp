@@ -1,8 +1,8 @@
 #include <memory>
 #include <fstream>
 
-#include "messengerFactory.hpp"
-#include "messenger.hpp"
+#include "../inc/messengerFactory.hpp"
+#include "../inc/messenger.hpp"
 
 using namespace messenger; 
 
@@ -31,3 +31,7 @@ int main(int argc, char* argv[]) {
     auto msg = mf.Get();
     msg->Send();       
 }
+
+// g++ utest.cpp ../src/IEncryptor.cpp ../src/encryptionFactory.cpp ../src/messenger.cpp ../src/senderFactory.cpp ../src/messengerFactory.cpp ../src/sourceFactory.cpp ../src/IStream.cpp ../src/configuration.cpp ../src/messengerProtocol.cpp ../src/socket.cpp ../src/TCPClientSocket.cpp ../src/ISender.cpp -lws2_32
+
+
