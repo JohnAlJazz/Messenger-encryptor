@@ -1,10 +1,15 @@
 # messenger-encryptor
-This is a messenger encryptor.
+Messenger encryptor.
 
-The messenger handles various source => destination messages as follows:
+The messenger encrypts messages and sends them to different destinations.
 
-  - cmd to stdout
-  - file to stdout
-  - file to file
-  - file to remote server over TCP
-  - cmd to remote server over TCP
+Messages sources:
+  - User via cmd
+  - Read from a file
+
+Messages destinations:
+  - Screen
+  - A file
+  - Remote user, over TCP
+
+New encryptions can be injected to the messenger factory/
